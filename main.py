@@ -44,7 +44,7 @@ button.pack(pady=12, padx=10)
 
 
 
-entry1 = customtkinter.CTkEntry(master=frame, placeholder_text="Number of Page you want to delete", textvariable=page)
+entry1 = customtkinter.CTkEntry(master=frame, placeholder_text="Number of Page you want to delete.", textvariable=page)
 entry1.pack(pady=12, padx=10)
 
 button = customtkinter.CTkButton(master=frame, text="Delete", command=saveURL)

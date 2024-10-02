@@ -11,7 +11,7 @@ root.geometry("500x350")
 
 
 url = {}  
-config_file = "urls.json"
+config_file = "autoSetup/urls.json"
 
 page = customtkinter.StringVar()  
 addedPages = customtkinter.StringVar()  
@@ -26,9 +26,7 @@ def loadURLs():
             id = str(int(max(url.keys(), default="0")) + 1) 
             formatted_pages = [f"{key}: {value}" for key, value in url.items()]
             addedPages.set("\n".join(formatted_pages))  
-    else:
-        with open(config_file, "w") as file:
-            json.dump(url, file)  
+
 
 
 def saveURLs():

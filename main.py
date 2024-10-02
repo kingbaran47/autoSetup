@@ -42,6 +42,16 @@ button = customtkinter.CTkButton(master=frame, text="Add Page to Setup", command
 button.pack(pady=12, padx=10)
 
 
+
+
+entry1 = customtkinter.CTkEntry(master=frame, placeholder_text="Number of Page you want to delete", textvariable=page)
+entry1.pack(pady=12, padx=10)
+
+button = customtkinter.CTkButton(master=frame, text="Delete", command=saveURL)
+button.pack(pady=12, padx=10)
+
+
+
 label = customtkinter.CTkLabel(master=frame, text="Added Websites", font=("Roboto", 24))
 label.pack(pady=12, padx =10)
 

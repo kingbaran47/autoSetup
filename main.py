@@ -11,7 +11,7 @@ root.geometry("500x350")
 
 
 url = {}  
-config_file = "autoSetup/urls.json"
+config_file = "urls.json"
 
 page = customtkinter.StringVar()  
 addedPages = customtkinter.StringVar()  
